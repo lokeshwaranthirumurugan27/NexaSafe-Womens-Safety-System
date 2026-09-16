@@ -93,6 +93,9 @@ When the user presses the dedicated SOS button:
                      │  Google Maps     │
                      │ Location View    │
                      └──────────────────┘
+
+                 ------
+
 🔧 Hardware Components
 Component	Purpose
 ESP32 DevKit V1-Main microcontroller
@@ -106,6 +109,8 @@ MPU9250-Motion and fall detection
 INMP441-Audio monitoring
 Battery-Portable power source
 Breadboard & Jumper Wires	Prototype connections
+
+  ----------
 
 💻 Software Stack
 Embedded System
@@ -126,6 +131,8 @@ Arduino IDE
 Git
 GitHub
 
+   ------
+
 📱 Mobile Application
 
 The NexaSafe Flutter application provides a user interface for monitoring the connected safety device.
@@ -144,6 +151,8 @@ GPS coordinates
 Current location
 Emergency events
 Map-based location information
+
+           -------
 
 🆘 Emergency Workflow
 User presses SOS
