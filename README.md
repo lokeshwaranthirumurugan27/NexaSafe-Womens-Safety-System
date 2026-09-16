@@ -93,3 +93,79 @@ When the user presses the dedicated SOS button:
                      │  Google Maps     │
                      │ Location View    │
                      └──────────────────┘
+🔧 Hardware Components
+Component	Purpose
+ESP32 DevKit V1-Main microcontroller
+NEO-6M GPS-Obtains geographical location
+SIM800L GSM-Sends emergency SMS
+Push Button-Dedicated SOS trigger
+LED	Visual-emergency indication
+Buzzer-Audible emergency indication
+MAX30102-Pulse monitoring
+MPU9250-Motion and fall detection
+INMP441-Audio monitoring
+Battery-Portable power source
+Breadboard & Jumper Wires	Prototype connections
+
+💻 Software Stack
+Embedded System
+ESP32
+Arduino IDE
+C/C++
+GPS communication
+GSM AT commands
+I2C communication
+Mobile Application
+Flutter
+Dart
+Firebase Realtime Database
+Google Maps Platform
+Development Tools
+VS Code
+Arduino IDE
+Git
+GitHub
+
+📱 Mobile Application
+
+The NexaSafe Flutter application provides a user interface for monitoring the connected safety device.
+
+Main Screens
+🏠 Home
+🗺️ Live Map
+🕒 Emergency History
+👤 Profile
+
+The application can display:
+
+Device status
+SOS status
+GPS coordinates
+Current location
+Emergency events
+Map-based location information
+
+🆘 Emergency Workflow
+User presses SOS
+        │
+        ▼
+ESP32 detects button press
+        │
+        ├──────────────► LED ON
+        │
+        ├──────────────► Buzzer ON
+        │
+        ▼
+GPS obtains location
+        │
+        ▼
+SIM800L sends emergency SMS
+        │
+        ▼
+Firebase synchronization
+        │
+        ▼
+Flutter application
+        │
+        ▼
+Emergency status + location displayed
